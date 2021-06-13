@@ -3,6 +3,10 @@ from django.db import models
 
 from .models import Question, Choice
 
+admin.site.site_header = 'Pollster Admin'
+admin.site.site_title = 'Pollster Admin Area'
+admin.site.index_title = 'Welcome to the pollster admin area'
+
 class ChoiceInline(admin.TabularInline):
   model = Choice
   extra = 1
